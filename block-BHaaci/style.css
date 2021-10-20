@@ -1,0 +1,245 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*Custom styles*/
+
+/*General styles*/
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size:16px;
+    line-height: 1.5;
+    background: linear-gradient(rgba(255,121,120,0.6),rgba(255,121,120,0.6)), url(assets/bg-intro-desktop.png);
+    background-size: cover;
+}
+
+/*My Resets*/
+
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*Container*/
+
+.container{
+    max-width:1200px;
+    margin:0 auto;
+    padding:32px 0;
+}
+
+/*Flex Properties*/
+
+/*Flex Row*/
+ .flex{
+     display:flex;
+     flex-direction: row;
+ }
+
+  /*Flex Column*/
+
+  .flex-column{
+    display:flex;
+    flex-direction: column;
+}
+
+
+/*Main axis and Cross Axis Properties*/
+
+ .justify-content-space-between{
+     justify-content: space-between;
+ }
+
+ .justify-content-space-evenly{
+     justify-content: space-evenly;
+ }
+
+ .justify-content-center{
+     justify-content: center;
+ }
+
+ .align-items-center{
+     align-items:center;
+ }
+
+
+ /*CSS Variables*/
+ :root{
+    --white:#FFFFFF;
+    --background-color:rgb(255,121,120);
+    --purple:#5D54A3;
+    --dark-purple:#3b356c;
+    --green:#37CC8A;
+    --grey:#6A696E;
+    --light-grey:#CAC8D3;
+    --pink:#EF8E8F;
+ }
+
+
+/*Main Section*/
+main{
+    height: 100vh;
+}
+ /*Hero Section*/
+
+ .hero{
+     flex:0 1 45%;
+     color:var(--white);
+     padding:20px;
+ }
+
+ .hero-heading{
+     font-size: 48px;
+     margin-bottom: 24px;
+ }
+
+ .hero-text{
+     font-size: 16px;
+ }
+
+
+ /*Sign Up Section*/
+ .sign-up{
+     flex:0 1 45%;
+ }
+
+ .sign-up .free-trial{
+     width:100%;
+     height: auto;
+     background-color: var(--purple);
+     border:0;
+     border:1px solid var(--dark-purple);
+     border-radius: 8px;
+     padding:20px;
+     box-shadow: 0px 5px 5px rgba(56, 52, 52, 0.6);
+     color:var(--white);
+     font-size: 16px;
+     margin-bottom: 30px;
+ }
+
+ .sign-up .free-trial span{
+     font-weight: 700;
+ }
+
+ /*Form*/
+
+ form{
+     background-color: var(--white);
+     padding:20px;
+     border-radius: 8px;
+     text-align: center;
+ }
+
+ .form-control{
+     display: block;
+     width:100%;
+     padding:16px;
+     border:0;
+     border-radius: 3px;
+     border:1px solid var(--light-grey);
+     margin-bottom: 16px;
+     color: black;
+     font-weight: 700;
+ }
+
+ .form-control::placeholder{
+     text-transform: capitalize;
+     color:var(--grey);
+ }
+
+ .form-control:focus{
+     border:1px solid var(--grey);
+ }
+
+
+/*Claim Button*/
+
+.claim-trail{
+    width: 100%;
+    padding:16px;
+    background-color: var(--green);
+    border:0;
+    border-radius: 3px;
+    border-bottom:3px solid #4AAE82;
+    text-transform: uppercase;
+    color:var(--white);
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+
+/*Bottom Policy Line*/
+
+form .policy{
+    color:var(--light-grey);
+    font-size: 12px;
+    font-weight: 700;
+
+}
+
+form .policy .terms{
+    color:var(--pink);
+}
+
+
+
+
+
+
