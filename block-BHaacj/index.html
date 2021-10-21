@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Form Assignment 2</title>
+        <link rel="stylesheet" href="style.css">
+
+        <!--Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+        <!--Icons-->
+        <script src="https://kit.fontawesome.com/70c45dc1b9.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="header flex justify-content-space-evenly align-items-center">
+            <div class="brand flex align-items-center">
+                <img class="brand-logo" src="assets/logo.png" alt="logo"/>
+                <span class="brand-name">journey</span>
+            </div>
+            <nav class="nav">
+                <ul class="header-nav flex">
+                    <li><a class="active" href="#">home</a></li>
+                    <li><a href="#">top destinations</a></li>
+                    <li><a href="#">recommended places</a></li>
+                    <li><a href="#">contact us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero container flex-column align-items-center section-padding">
+            <div class="hero-title">
+                <h1>let's begin</h1>
+            </div>
+            <div class="hero-three-dots flex-column align-items-center">
+                <div class="dot"></div>
+                <div class="dot dot-big"></div>
+                <div class="dot"></div>
+            </div>
+            <div class="hero-text">
+                <p>We assist you to choose the best.</p>
+            </div>
+            <div class="hero-down-arrow flex justify-content-center align-items-center">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="booking">
+                <form class="flex-column" action="index.html" method="post">
+                    <div class="row flex">
+                        <div class="col">
+                            <label for="destination">choose your destination</label>
+                            <input class="form-control" type="text" name="destination" id="destination" placeholder="Type your destination"/>
+                        </div>
+                        
+                        <div class="col">
+                            <label for="room">How many rooms?</label>
+                            <input class="form-control" type="text" name="room" id="room"/>
+                        </div>
+                        
+                        <div class="col">
+                            <label for="adult">Adult</label>
+                            <input class="form-control" type="text" name="adult" id="adult"/>
+                        </div>
+                        
+                        <div class="col">
+                            <label for="children">children</label>
+                            <input class="form-control" type="text" name="children" id="children"/>
+                        </div>
+
+                    </div>
+                    <div class="row flex align-items-flex-end">
+                        <div class="col">
+                            <label for="checkin">checkin</label>
+                            <input type="date" name="checkin" id="checkin">
+                        </div>
+                        <div class="col">
+                            <label for="checkout">checkout</label>
+                            <input type="date" name="checkout" id="checkout">
+                        </div>
+                        <div class="col">
+                            <button class="form-btn" name="availability">check availability</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+        </section>
+
+        <section class="journey container section-padding">
+            <div class="container-2">
+                <p class="journey-title">your <strong>journey</strong> is our priority</p>
+                <p class="journey-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Eius excepturi nostrum eos maxime accusantium velit,
+                     odio voluptates sunt laudantium veritatis, officia totam, molestias quia mollitia perspiciatis impedit ea deleniti nisi.</p>
+                     <button class="btn btn-primary">continue explore</button>
+            </div>
+        </section>
+
+        <section class="gallery section-padding">
+                    <section class="block container flex align-items-center">
+                        <div class="image">
+                            <img class="flexible-img" src="assets/tm-img-01.jpg" alt="Asia">
+                        </div>
+                        <div class="continent-desc">
+                            <h3 class="title">
+                                Europe's most visited places
+                            </h3>
+                            <p class="desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Eius excepturi nostrum eos maxime accusantium velit, odio voluptates sunt laudantium veritatis, 
+                                officia totam, molestias quia mollitia perspiciatis impedit ea deleniti nisi. Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                            </p>
+                            <button class="btn btn-secondary">continue reading</button>
+                        </div>
+                    </section>
+
+                    <section class="block container flex align-items-center">
+
+                        <div class="image">
+                            <img class="flexible-img" src="assets/tm-img-02.jpg" alt="Asia">
+                        </div>
+                        
+                        <div class="continent-desc">
+                            <h3 class="title">
+                                Asia's most popular places
+                            </h3>
+                            <p class="desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Eius excepturi nostrum eos maxime accusantium velit, odio voluptates sunt laudantium veritatis, 
+                                officia totam, molestias quia mollitia perspiciatis impedit ea deleniti nisi. Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                            </p>
+                            <button class="btn btn-secondary">continue reading</button>
+                        </div>
+
+                       
+                    </section>
+
+
+                    <section class="block container flex align-items-center">
+                        <div class="image">
+                            <img class="flexible-img" src="assets/tm-img-03.jpg" alt="America">
+                        </div>
+                        <div class="continent-desc">
+                            <h3 class="title">
+                                America's most famous places
+                            </h3>
+                            <p class="desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Eius excepturi nostrum eos maxime accusantium velit, odio voluptates sunt laudantium veritatis, 
+                                officia totam, molestias quia mollitia perspiciatis impedit ea deleniti nisi. Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                            </p>
+                            <button class="btn btn-secondary">continue reading</button>
+                        </div>
+                    </section>
+        </section>
+        
+        <section class="continent-list container flex section-padding">
+            <div class="cont">
+                <img src="assets/north-america.png" alt="north america">
+                <p>North america</p>
+            </div>
+            <div class="cont">
+                <img src="assets/south-america.png" alt="south america">
+                <p>South america</p>
+            </div>
+            <div class="cont">
+                <img src="assets/europe.png" alt="europe">
+                <p>Europe america</p>
+            </div>
+            <div class="cont cont-1">
+                <img src="assets/asia.png" alt="asia">
+                <p>Asia</p>
+            </div>
+            <div class="cont">
+                <img src="assets/africa.png" alt="africa">
+                <p>Africa</p>
+            </div>
+            <div class="cont">
+                <img src="assets/australia.png" alt="australia">
+                <p>Australia</p>
+            </div>
+            <div class="cont">
+                <img src="assets/antartica.png" alt="antartica">
+                <p>Antartica</p>
+            </div>
+        </section>
+
+        <section class="pricing section-padding">
+            <div class="container">
+                <div class="pricing-row flex">
+                    <div class="pricing-image">
+                        <img class="flexible-img" src="assets/tm-img-06.jpg" alt="Asia resort pic">
+                    </div>
+                    <div class="pricing-desc">
+                        <h3 class="pricing-desc-title">
+                            asia resort hotel
+                        </h3>
+                        <span class="pricing-desc-country">
+                            Singapore
+                        </span>
+                        <p class="pricing-desc-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Eius excepturi nostrum eos maxime accusantium velit
+                        </p>
+                    </div>
+                    <div class="pricing-rate flex-column justify-content-center align-items-center">
+                        <h3 class="pricing-rate-title">
+                            $440
+                        </h3>
+                        <span class="pricing-rate-continue-reading">
+                            continue reading
+                        </span>
+                    </div>
+                </div>
+
+                <div class="pricing-row flex">
+                    <div class="pricing-image">
+                        <img class="flexible-img" src="assets/tm-img-07.jpg" alt="Nullam resort pic">
+                    </div>
+                    <div class="pricing-desc">
+                        <h3 class="pricing-desc-title">
+                            proin interdum
+                        </h3>
+                        <span class="pricing-desc-country">
+                            Singapore
+                        </span>
+                        <p class="pricing-desc-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Eius excepturi nostrum eos maxime accusantium velit
+                        </p>
+                    </div>
+                    <div class="pricing-rate flex-column justify-content-center align-items-center">
+                        <h3 class="pricing-rate-title">
+                            $450
+                        </h3>
+                        <span class="pricing-rate-continue-reading">
+                            continue reading
+                        </span>
+                    </div>
+                </div>
+
+                <div class="pricing-row flex">
+                    <div class="pricing-image">
+                        <img class="flexible-img" src="assets/tm-img-05.jpg" alt="Proin resort pic">
+                    </div>
+                    <div class="pricing-desc">
+                        <h3 class="pricing-desc-title">
+                            nullam egt est  a nisl
+                        </h3>
+                        <span class="pricing-desc-country">
+                            Singapore
+                        </span>
+                        <p class="pricing-desc-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Eius excepturi nostrum eos maxime accusantium velit
+                        </p>
+                    </div>
+                    <div class="pricing-rate flex-column justify-content-center align-items-center">
+                        <h3 class="pricing-rate-title">
+                            $460
+                        </h3>
+                        <span class="pricing-rate-continue-reading">
+                            continue reading
+                        </span>
+                    </div>
+                </div>
+
+                <div class="pricing-row flex">
+                    <div class="pricing-image">
+                        <img class="flexible-img" src="assets/tm-img-04.jpg" alt="Proin resort pic">
+                    </div>
+                    <div class="pricing-desc">
+                        <h3 class="pricing-desc-title">
+                            lorem ipsum
+                        </h3>
+                        <span class="pricing-desc-country">
+                            Singapore
+                        </span>
+                        <p class="pricing-desc-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Eius excepturi nostrum eos maxime accusantium velit
+                        </p>
+                    </div>
+                    <div class="pricing-rate flex-column justify-content-center align-items-center">
+                        <h3 class="pricing-rate-title">
+                            $470
+                        </h3>
+                        <span class="pricing-rate-continue-reading">
+                            continue reading
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map section-padding">
+            <div class="container flex">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375.8879797171785!2d76.35319631557361!3d32.20724902012385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b530e24726e0d%3A0x71ff0cae0784712d!2sAltCampus%20Services%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1634796702908!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <form action="index.html">
+                    <fieldset>
+                        <input class="form-control" type="text" name="name" placeholder="name"><!--
+                        --><input class="form-control" type="email" name="email" placeholder="email">
+                        <input class="form-control" type="text" name="subject" placeholder="subject">
+                        <textarea class="form-control" name="message"  cols="60" rows="10" placeholder="message"></textarea>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <small>Copyright &copy; Your company.Designed Template by Mo</small>
+        </footer>
+
+
+    </body>
+</html>

@@ -1,0 +1,417 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*Custom styles*/
+
+/*Generalized styles*/
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.active{
+    color: var(--aqua-green) !important;
+}
+
+.btn{
+    padding:10px 20px;
+    border:0;
+    text-transform: uppercase;
+    margin-top: 10px;
+
+}
+
+.btn-primary{
+    background-color: var(--aqua-green);
+    color:var(--white);
+}
+
+.btn-secondary{
+    background-color: var(--white);
+    color: var(--aqua-green);
+}
+
+.flexible-img{
+    width:100%;
+    height: auto;
+}
+
+.section-padding{
+    padding:32px 0;
+}
+
+
+
+/*My resets*/
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*Container*/
+.container{
+    max-width:1400px;
+    margin:0 auto;
+}
+
+.container-2{
+    max-width:900px;
+    margin:0 auto;
+}
+
+/*CSS Variables*/
+:root{
+    --aqua-green:#69C6BA;
+    --pink:#C66995;
+    --white:#FFFFFF;
+    --grey:#7F8082;
+    --dark-grey:#E6E6E6;
+    --light-grey:#EFEFEF;
+}
+
+
+/*Flex*/
+
+.flex{
+    display:flex;
+}
+
+/*Flex column*/
+
+.flex-column{
+    display:flex;
+    flex-direction: column;
+}
+
+/*Main axis and Cross Axis Properties*/
+
+.justify-content-space-between{
+    justify-content: space-between;
+}
+
+.justify-content-space-evenly{
+    justify-content:space-evenly;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.align-items-flex-end{
+    align-items: flex-end;
+}
+
+.justify-align-center{
+    justify-self: center;
+}
+
+/*Customize Styles*/
+
+/*Header*/
+.header{
+    padding:32px 0;
+}
+.brand .brand-name{
+    font-size:32px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav .header-nav li{
+    margin-left: 50px;
+    font-weight: 600;
+}
+
+.nav .header-nav a{
+    text-transform: capitalize;
+    color: black;
+}
+
+/*Hero*/
+
+.hero{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url(assets/banner.jpg); 
+    color: var(--white);
+
+}
+
+.hero-title h1{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.dot{
+    width: 7px;
+    height: 7px;
+    background-color: var(--white);
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.dot-big{
+    width: 10px;
+    height: 10px;
+}
+
+.hero-text p{
+    font-size: 20px;
+}
+
+.hero-down-arrow{
+    background-color: var(--aqua-green);
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+
+
+/*From*/
+
+form{
+    background-color: var(--white);
+    color: black;
+}
+.form-control{
+    padding:10px;
+    margin-right: 10px;
+}
+
+label{
+    display:block;
+    text-transform: capitalize;
+}
+
+
+.form-btn{
+    background-color: var(--aqua-green);
+    padding:10px;
+    border:0;
+    color:var(--white);
+    text-transform: uppercase;
+    margin-left: 100px;
+}
+
+
+
+/*Journey*/
+
+.journey{
+    text-align: center;
+    background-color: var(--light-grey);
+}
+
+.journey-title{
+    font-size: 32px;
+    font-size: 400;
+    text-transform:uppercase;
+}
+.journey-desc{
+    font-size: 16px;
+    color:var(--grey);
+}
+
+
+/*Gallery*/
+.block{
+    position: relative;
+}
+
+.image{
+    flex:0 1 50%;
+    font-size: 0;
+}
+.continent-desc{
+    flex:0 1 50%;
+    position: absolute;
+    left:650px;
+    right:50px;
+    background-color: var(--aqua-green);
+    padding:40px;
+}
+
+.continent-desc-1{
+    flex:0 1 50%;
+    position: absolute;
+    right:650px;
+    left:50px;
+    background-color: var(--aqua-green);
+    padding:40px;
+}
+
+.continent-desc .title{
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--white);
+}
+
+.continent-desc .desc{
+    font-size: 16px;
+    color: var(--white);
+}
+.cont{
+    flex:0 1 14.28%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--aqua-green);
+    padding:10px 0;
+}
+
+.cont p{
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.cont-1{
+    background-color: var(--pink);
+}
+
+
+
+
+/*Pricing Section*/
+
+.pricing-row{
+    margin-bottom: 20px;
+}
+
+.pricing-image{
+    flex:0 1 25%;
+    font-size: 0;
+}
+
+.pricing-desc{
+    flex:0 1 55%;
+    padding:20px;
+}
+
+.pricing-desc-title{
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.pricing-desc-country{
+    font-size: 20px;
+    color: red;
+}
+
+.pricing-desc-text{
+    font-size: 16px;
+    color: var(--grey);
+}
+
+.pricing-rate{
+    flex:0 1 20%;
+    background-color: var(--aqua-green);
+    color: var(--white);
+}
+
+.pricing-rate-title{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.pricing-rate-continue-reading{
+    font-size: 16px;
+}
+
+
+/*Map*/
+
+.map iframe{
+    width:100%;
+    height:400px;
+}
+
+.map form{
+    flex:0 1 50%;
+}
+
+.form-control{
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 20px;
+    border:0;
+    background-color: var(--light-grey);
+}
+
+input[name="name"],
+input[name="email"]{
+    width: 47%;
+
+}
+
+input[name="subject"]{
+    width: 100%;
+}
+footer{
+    text-align: center;
+    padding:20px;
+    background-color: var(--aqua-green);
+    color: var(--white);
+}
